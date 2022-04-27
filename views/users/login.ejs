@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/10338401_10152420800833785_2169642642144944786_o.jpg?_nc_cat=100&ccb=1-5&_nc_sid=b9115d&_nc_ohc=Uj9rwDXlrRkAX_7-nSS&_nc_oc=AQlMv1b5UpfXigmzb9zqN8PgItDbIbWscqpWRM5bC_1DDD2y57NQUrddDlrnEHJmi38&tn=149MBaJPFmnbwcad&_nc_ht=scontent-ort2-1.xx&oh=00_AT-y0oMnHnJ8CmmEzjZPrXq4ts7uL0fmVeVF3BgdlBmStw&oe=6289F44D"
+                    alt="" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" autofocus required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
